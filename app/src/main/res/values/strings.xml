@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Iti</string>
+    <string name="payment_done_see_receipt_button_text">ver comprovante</string>
+    <string name="payment_done_title_text">pagamento feito</string>
+    <string name="payment_done_close_button_description">botão de fechar</string>
+    <string name="payment_done_amount">%1$s\npara %2$s</string>
+    <string name="payment_done_divide_amount_action">dividir esse valor com alguém</string>
+</resources>

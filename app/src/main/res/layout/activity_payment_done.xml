@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue"
+    tools:context=".PaymentDoneActivity">
+    <TextView
+        android:id="@+id/payment_done_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="@string/payment_done_title_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/payment_done_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:contentDescription="@string/payment_done_close_button_description"
+        app:layout_constraintTop_toTopOf="@id/payment_done_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/payment_done_title" />
+
+    <View
+        android:id="@+id/payment_done_mainly_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/background_rounded_white"
+        app:layout_constraintBottom_toTopOf="@id/payment_done_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/payment_done_title" />
+    <ImageView
+        android:padding="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintBottom_toTopOf="@id/payment_done_divide_amount_text"
+        app:layout_constraintEnd_toEndOf="@id/payment_done_mainly_view"
+        app:layout_constraintStart_toStartOf="@id/payment_done_mainly_view"
+        app:layout_constraintTop_toTopOf="@id/payment_done_mainly_view"
+        />
+
+    <TextView
+        android:id="@+id/payment_done_divide_amount_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/payment_done_divide_amount_action"
+        app:layout_constraintEnd_toEndOf="@id/payment_done_mainly_view"
+        app:layout_constraintStart_toEndOf="@id/payment_done_mainly_view"
+        app:layout_constraintStart_toStartOf="@+id/payment_done_mainly_view" />
+
+    <TextView
+        android:id="@+id/payment_done_divide_amount_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="237dp"
+        android:text="@string/payment_done_divide_amount_action"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/payment_done_mainly_view"
+        app:layout_constraintEnd_toEndOf="@id/payment_done_mainly_view"
+        app:layout_constraintStart_toStartOf="@id/payment_done_mainly_view" />
+    <Button
+        android:id="@+id/payment_done_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/Theme.Iti.Button"
+        android:text="@string/payment_done_see_receipt_button_text"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
